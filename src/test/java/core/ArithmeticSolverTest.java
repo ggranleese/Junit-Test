@@ -10,6 +10,14 @@ public class ArithmeticSolverTest extends TestCase {
 		assertEquals(4.0, solver.add(2,2));
 	}
 	
+	public void testAddNegative() {
+		ArithmeticSolver solver = new ArithmeticSolver();
+		
+		assertEquals(-4.0, solver.add(-2,-2));
+		assertEquals(-55.0, solver.add(-58,-3));
+		assertEquals(10.0, solver.add(25,-15));
+	}
+	
 	public void testSubtract() {
 		ArithmeticSolver solver = new ArithmeticSolver();
 		
